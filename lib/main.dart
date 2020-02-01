@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shareit/features/MainPage/presentation/pages/MainPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,17 +15,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(accentColor: Colors.lightBlue),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(""),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.blue,
-          child: Icon(Icons.add),
-          onPressed: () {},
-        ),
-        bottomNavigationBar: BottomAppBar(),
-      ),
+      home: MainPage(),
     );
   }
 }
